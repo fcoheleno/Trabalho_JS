@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playner</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style_site.css">
+    <style>
+        body {
+    background-attachment: fixed;
+    background-image: url('img/robo_back.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text {
+    margin-left: 60%;
+    justify-content: center;
+}
+    </style>
+</head>
+<body>
+    <div class="div_transicao">
+
+    </div>
+
+    <nav class="menu-lateral">
+        <div class="btn-expandir">
+            <i class="bi bi-list" id="btn-exp"></i>
+        </div>
+
+        <ul>
+            <li class="item-menu jogos">
+                <a href="#" onclick="sem_login()">
+                    <span class="icon">
+                        <i class="bi bi-controller"></i>
+                    </span>
+                    <span class="txt-link">Jogos</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#" onclick="sem_login()">
+                    <span class="icon">
+                        <i class="bi bi-easel"></i>
+                    </span>
+                    <span class="txt-link">Fanart</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#" onclick="sem_login()">
+                    <span class="icon">
+                        <i class="bi bi-person-circle"></i>
+                    </span>
+                    <span class="txt-link">Conta</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="text">
+        <h2>Olá! Seja bem vindo ao Playner</h2><p>Aqui você conhece grandes jogos de terror <br> Para começar vamos logar na sua conta</p>
+        <a href="login.html"><button class="btn-login" onclick="nextPage()">login</button></a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

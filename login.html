@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playner - Login</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style_site.css">
+    <style>
+        body {
+    background-attachment: fixed;
+    background-image: url('img/desk.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    </style>
+</head>
+<body>
+    <nav class="menu-lateral">
+        <div class="btn-expandir">
+            <i class="bi bi-list" id="btn-exp"></i>
+        </div>
+
+        <ul>
+            <li class="item-menu jogos">
+                <a href="#" onclick="sem_login()">
+                    <span class="icon">
+                        <i class="bi bi-controller"></i>
+                    </span>
+                    <span class="txt-link">Jogos</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#" onclick="sem_login()">
+                    <span class="icon">
+                        <i class="bi bi-easel"></i>
+                    </span>
+                    <span class="txt-link">Fanart</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#" onclick="sem_login()">
+                    <span class="icon">
+                        <i class="bi bi-person"></i>
+                    </span>
+                    <span class="txt-link">Conta</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="login-area">
+        <form>
+
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Usuario" required id="usuario"><i class="bi bi-person-fill"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Senha" required id="senha"><i class="bi bi-lock-fill"></i>
+            </div>
+            <button class="btn" type="submit" onclick="logar(); return false">Login</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
